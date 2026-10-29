@@ -13,7 +13,7 @@ Written before the work, ticked at the end. A box is ticked only with a number, 
 - [x] MO-1 target met: median 45 ms (min 44, max 48) against a target of 300 ms. The target was too loose, see `docs/objectives.md`.
 - [x] One grouping beyond the plain count: `?group_by=type` splits counts by shape type. Why: it makes the polygon/mask mix visible (8022 polygon rows, 87 mask rows), which is where the gap to COCO counts comes from. Evidence: `docs/evidence/group-by-checks.txt`. The page does not use it.
 - [x] Commits are small, with messages that say what and why. Evidence: `git log --oneline 5d9c21558fff8d8eb47c6f9577357b0e1ecf97c5..HEAD`, plan first, then objectives, definition of done, app skeleton, permission class, endpoint, page, evidence.
-- [ ] No dead code, commented-out blocks or stray files. Pending: `git status` and a diff read.
+- [x] No dead code, commented-out blocks or stray files. Evidence: `git status --short` prints nothing; a grep of the new files for console/TODO/FIXME/debugger/print and comment lines finds only the license headers; `git diff --stat` against the base commit lists only the app, three UI files, two registration edits, docs and evidence.
 - [ ] Loom recorded, 5 minutes or less, with K1 to K4 answered against my own code.
 - [ ] Pull request opened from `dev-test01` into `develop` on my own fork, not the real CVAT repo.
 - [x] Everything I did not finish is listed below.
