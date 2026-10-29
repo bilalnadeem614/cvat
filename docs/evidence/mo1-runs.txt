@@ -1,0 +1,10 @@
+date: Fri Oct 30 02:17:41 AM PKT 2026
+endpoint: GET /api/label-counts/1, task with 8109 shapes, token auth, localhost:8080, dev server stopped
+warm-up (not counted), seconds:
+0.054403
+measured runs, seconds:
+0.047762
+0.045527
+0.043578
+0.044532
+0.045445
