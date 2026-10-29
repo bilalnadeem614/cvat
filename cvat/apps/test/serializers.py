@@ -4,9 +4,12 @@
 
 from rest_framework import serializers
 
+from cvat.apps.engine.models import ShapeType
+
 
 class LabelCountSerializer(serializers.Serializer):
     label = serializers.CharField()
+    type = serializers.ChoiceField(choices=ShapeType.choices(), required=False)
     count = serializers.IntegerField()
 
 
