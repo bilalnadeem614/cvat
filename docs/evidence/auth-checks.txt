@@ -1,0 +1,11 @@
+== second user can log in (expect 200) ==
+200
+== owner, task 1, first 300 chars ==
+{"task_id":1,"total":8109,"counts":[{"label":"person","count":2499},{"label":"chair","count":466},{"label":"car","count":416},{"label":"bottle","count":218},{"label":"book","count":213},{"label":"dining table","count":201},{"label":"cup","count":190},{"label":"bowl","count":132},{"label":"bench","co
+== anonymous (expect 401) ==
+401
+== missing task (expect 404) ==
+404
+== second user, no access to task 1 (expect 403) ==
+{"detail":"You do not have permission to perform this action."}
+403

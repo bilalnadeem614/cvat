@@ -114,6 +114,12 @@ export default function TaskActionsItems(menuItemsData: MenuItemsData, taskMenuP
     }, 70]);
 
     menuItems.push([{
+        key: 'label_counts',
+        label: withCount('Label counts', 'label_counts', `/tasks/${taskId}/label-counts`),
+        disabled: isDisabled('label_counts'),
+    }, 72]);
+
+    menuItems.push([{
         key: 'consensus_management',
         label: withCount('Consensus management', 'consensus_management', `/tasks/${taskId}/consensus`),
         disabled: isDisabled('consensus_management'),
