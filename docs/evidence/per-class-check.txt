@@ -1,0 +1,6 @@
+classes in COCO subset: 79 | classes in endpoint: 79
+expected total: 8109 | endpoint total: 8109
+classes with a different count: 0
+person expected 2499 endpoint 2499
+chair expected 466 endpoint 466
+car expected 416 endpoint 416
