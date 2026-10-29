@@ -1,0 +1,12 @@
+== default, unchanged (first 200 chars) ==
+{"task_id":1,"total":8109,"counts":[{"label":"person","count":2499},{"label":"chair","count":466},{"label":"car","count":416},{"label":"bottle","count":218},{"label":"book","count":213},{"label":"dini
+== group_by=type (first 300 chars) ==
+{"task_id":1,"total":8109,"counts":[{"label":"person","type":"polygon","count":2447},{"label":"chair","type":"polygon","count":460},{"label":"car","type":"polygon","count":414},{"label":"bottle","type":"polygon","count":216},{"label":"book","type":"polygon","count":207},{"label":"dining table","type
+== polygon and mask row counts ==
+total 8109 rows 99
+{'polygon': 8022, 'mask': 87}
+== bad value (expect 400) ==
+["group_by must be 'type'"]
+400
+== second user (logged in, no access), group_by=type (expect 403) ==
+403
